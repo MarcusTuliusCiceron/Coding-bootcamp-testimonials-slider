@@ -13,6 +13,105 @@ html {
 
 body {
   font-family: 'Inter', sans-serif;
+  padding: 50px 37px;
+  background-image: url(../../images/pattern-curve.svg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  font-size: 32px;
+  font-weight: 300;
+  height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  height: 650px;
+  background-image: url(../../images/pattern-bg.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  padding: 63px 160px;
+  padding-right: 90px;
+  position: relative;
+  border: solid 1px red;
+}
+
+main .block_quote {
+  border: solid 1px green;
+  width: 58%;
+  margin-top: 100px;
+  padding-top: 63px;
+  background-image: url(../../images/pattern-quotes.svg);
+  background-repeat: no-repeat;
+  background-position: 100px 0px;
+  position: relative;
+  z-index: 1;
+}
+
+main .block_quote .quote_text {
+  line-height: 1.35;
+  margin-bottom: 40px;
+  z-index: 3;
+}
+
+main .block_quote .quote_author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  gap: 15px;
+}
+
+main .block_quote .quote_author strong {
+  font-weight: 700;
+}
+
+main .block_portrait {
+  background-image: url(../../images/image-tanya.jpg);
+  border: solid 1px teal;
+  width: 40%;
+  position: absolute;
+  top: 60px;
+  right: 87px;
+  bottom: 45px;
+  z-index: 0;
+}
+
+main .block_portrait .block_arrow {
+  width: 120px;
+  height: 60px;
+  position: absolute;
+  bottom: -30px;
+  border-radius: 30px;
+  left: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 3;
+  background-color: white;
+}
+
+main .block_portrait .block_arrow .arrow_left, main .block_portrait .block_arrow .arrow_right {
+  height: 100%;
+  width: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 30px 0px 0px 30px;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+main .block_portrait .block_arrow .arrow_left:hover, main .block_portrait .block_arrow .arrow_right:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 2px 4px 16px black;
+          box-shadow: 2px 4px 16px black;
+}
+
+main .block_portrait .block_arrow .arrow_right {
+  background-image: url(../../images/icon-next.svg);
+  border-radius: 0px 30px 30px 0px;
+}
+
+main .block_portrait .block_arrow .arrow_left {
+  background-image: url(../../images/icon-prev.svg);
 }
 
 @media (max-width: 65.5625rem) {

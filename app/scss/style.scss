@@ -13,8 +13,101 @@ html{
 }
 body{
     font-family: 'Inter', sans-serif;
+    padding: 50px 37px;
+    background-image: url(../../images/pattern-curve.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    font-size: 32px;
+    font-weight: 300;
+    height: 100vh;
+    overflow: hidden;
+    
 }
+main{
+    height: 650px;
+    background-image: url(../../images/pattern-bg.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    padding: 63px 160px;
+    padding-right: 90px;
+    position: relative;
+    border: solid 1px red;
+    
+    .block_quote{
+        border: solid 1px green;
+        width: 58%;
+        margin-top: 100px;
+        padding-top: 63px;
+        background-image: url(../../images/pattern-quotes.svg);
+        background-repeat: no-repeat;
+        background-position: 100px 0px;
+        position: relative;
+        z-index: 1;
+        .quote_text{
+            line-height: 1.35;
+            margin-bottom: 40px;
+            z-index: 3;
+        }
+        .quote_author{
+            display: flex;
+            font-size: 20px;
+            gap: 15px;
+            strong{
+                font-weight: 700;
+            }
+        }
+        .quote1{
+            
+        }
+        .quote2{
 
+        }
+    }
+    .block_portrait{
+        background-image: url(../../images/image-tanya.jpg);
+        border: solid 1px teal;
+        width: 40%;
+        position: absolute;
+        top: 60px;
+        right: 87px;
+        bottom: 45px;
+        z-index: 0;
+        .block_arrow{
+            width: 120px;
+            height: 60px;
+
+            position: absolute;
+            bottom: -30px;
+            border-radius: 30px;
+            left: 60px;
+
+            display: flex;
+            z-index: 3;
+            background-color: white;
+            .arrow_left, .arrow_right{
+                height: 100%;
+                width: 50%;
+                background-position: center;
+                background-repeat: no-repeat;
+                border-radius: 30px 0px 0px 30px;
+                transition: all 300ms ease-in-out;
+                &:hover{
+                    cursor: pointer;
+                    box-shadow: 2px 4px 16px black;
+                }
+            }
+            .arrow_right{
+                background-image: url(../../images/icon-next.svg);
+                border-radius: 0px 30px 30px 0px;
+            }
+            .arrow_left{
+
+                background-image: url(../../images/icon-prev.svg);
+
+            }
+        }
+    }
+}
 //helperClass to hide/show element
 
 .hideForMobile{
