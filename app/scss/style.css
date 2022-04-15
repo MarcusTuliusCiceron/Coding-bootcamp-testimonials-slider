@@ -11,6 +11,110 @@ html {
   padding: 0;
 }
 
+body {
+  padding: 2.85vw 5.225vw;
+  height: 100vh;
+  width: 100vw;
+  padding-bottom: 6vw;
+  background-image: url(../../images/pattern-curve.svg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  font-family: 'Inter', sans-serif;
+}
+
+main {
+  border: solid 1px red;
+  height: 100%;
+  background-image: url(../../images/pattern-bg.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 5vw 6vw;
+  padding-bottom: 4.2vw;
+}
+
+main .block {
+  border: solid 1px green;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+main .block_quote {
+  border: solid 1px blue;
+  height: 65%;
+  width: 58%;
+  background-image: url(../../images/pattern-quotes.svg);
+  background-repeat: no-repeat;
+  background-position: 95px 0;
+  padding-top: 70px;
+  line-height: 44px;
+  font-size: 32px;
+  font-weight: 300;
+}
+
+main .block_quote .quote_text {
+  margin-bottom: 27px;
+  position: relative;
+  z-index: 2;
+}
+
+main .block_quote div.quote_author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  gap: 10px;
+}
+
+main .block_quote div.quote_author p {
+  font-weight: 500;
+  color: #babacf;
+}
+
+main .block_arrow {
+  position: absolute;
+  height: 60px;
+  width: 110px;
+  background-color: white;
+  bottom: -30px;
+  border-radius: 30px;
+  left: 57%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 3;
+}
+
+main .block_arrow .arrow_left, main .block_arrow .arrow_right {
+  width: 50%;
+  height: 100%;
+  background-image: url(../../images/icon-prev.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+main .block_arrow .arrow_right {
+  background-image: url(../../images/icon-next.svg);
+}
+
+main .block_portrait {
+  border: solid 1px teal;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 48.5%;
+  background-image: url(../../images/image-tanya.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 @media (max-width: 65.5625rem) {
   .hideForMobile {
     display: none;
