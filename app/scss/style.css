@@ -11,19 +11,6 @@ html {
   padding: 0;
 }
 
-body {
-  font-family: 'Inter', sans-serif;
-  padding: 6.32vw 7.85vw;
-  background-image: url(../../images/pattern-curve.svg);
-  background-repeat: no-repeat;
-  background-position: bottom left;
-  font-size: 32px;
-  font-weight: 300;
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-}
-
 @media (max-width: 65.5625rem) {
   .hideForMobile {
     display: none;
